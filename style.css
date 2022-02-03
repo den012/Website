@@ -702,56 +702,60 @@ nav h1{
 
 }
 
-
+.carduri{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .cards{
-margin-top: 70px;
-box-sizing: border-box;
-font-size: 62.5%;
-font-family: "Fira sans", sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-position: fixed;
-left: 3%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Fira sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: fixed;
+    left: 10%;
 }
 
 .grid {
-display: grid;
-width: 183em;
-grid-gap: 4rem;
-grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-align-items: start;
+    display: grid;
+    width: 150em;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-items: start;
 }
 
 .grid-item {
-background-color: rgba(255, 255, 255, 0.1);
-border-radius: 0.4rem;
-overflow: hidden;
-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-cursor: pointer;
-transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .grid-item:hover {
-transform: translateY(-0.5%);
-box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
 
 .card-img {
-display: block;
-width: 100%;
-height: 20rem;
-object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
 }
 
 .card-content {
-padding: 3rem;
+    padding: 3rem;
 }
 
 .card-header {
-font-size: 1.4rem;
-font-weight: 300;
-color: whitesmoke;
-margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: whitesmoke;
+    margin-bottom: 1.5rem;
 }
