@@ -197,7 +197,7 @@
 #stars:after{
     content: '';
     position: aboslute;
-    top: 2000px;
+    top: 500px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -441,7 +441,7 @@
 #stars2:after{
     content: '';
     position: absolute;
-    top: 2000px;
+    top: 500px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -534,7 +534,7 @@
 #stars3:after{
     content: '';
     position: aboslute;
-    top: 2000px;
+    top: 500px;
     width: 3px;
     height: 3px;
     background: transparent;
@@ -596,6 +596,7 @@ body{
 
 .worldVideo{
     width: 35%;
+    border-radius: 500px;
 }
 
 #title{
@@ -612,7 +613,7 @@ body{
     font-size: 2rem;
 }
 
-p{
+#earthp{
     color: #fff;
     display: flex;
     justify-content: center;
@@ -759,3 +760,234 @@ nav h1{
     color: whitesmoke;
     margin-bottom: 1.5rem;
 }
+
+#text{
+    color: #fff;
+    font-family: 'Fira sans';
+}
+
+.moveText{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 330px;
+    position: fixed;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+#welcome{
+    color: var(--primary);
+    font-family: 'Fira sans';
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 280px;
+    position: fixed;
+    font-size: 4rem;
+    margin-left: 50px;
+}
+#para{
+    color:#fff;
+    font-family: 'lato';
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 470px;
+    position: fixed;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+/* social media buttons */
+.allbtn{
+    display: grid;
+    place-items: left;
+    padding-top: 36%;
+    padding-left: 6%;
+    position: fixed;
+}
+.wrap{
+    display: inline-flex;
+}
+
+.wrap .icon{
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrap .icon a{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #fff;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrap .icon a i{
+    line-height: 60px;
+    font-size: 25px;
+}
+
+.wrap .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    font-family: 'Fira sans';
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrap .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrap .icon a{
+    color: #fff;
+}
+  .wrap .icon:hover a,
+  .wrap .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+  .wrap .facebook a,
+  .wrap .facebook:hover .tooltip,
+  .wrap .facebook:hover .tooltip:before{
+    background: #3B5999;
+}
+  .wrap .twitter a,
+  .wrap .twitter:hover .tooltip,
+  .wrap .twitter:hover .tooltip:before{
+    background: #1DA1F2;
+}
+  .wrap .instagram a,
+  .wrap .instagram:hover .tooltip,
+  .wrap .instagram:hover .tooltip:before{
+    background: #F56040;
+}
+  .wrap .github a,
+  .wrap .github:hover .tooltip,
+  .wrap .github:hover .tooltip:before{
+    background: #333;
+}
+
+.image{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: 150px;
+    margin-right: 230px;
+}
+
+
+/* contact */
+.ctpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira sans';
+    margin-top: 200px;
+}
+.contact-section{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 80px 0;
+    text-align: center;
+    height: 500px;
+    width: 800px;
+    border-radius: 10%;
+  }
+  
+  .inner-width{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .contact-section h1{
+    font-size: 25px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-top:150px;
+  }
+  
+  .name,.email,.message{
+    background: none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-family: 'Fira sans';
+  }
+  
+  .name{
+    float: left;
+    width: 270px;
+  }
+  
+  .email{
+    float: right;
+    width: 270px;
+  }
+  
+  .message{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  
+  .contact-section button{
+    background: none;
+    color: #fff;
+    border: 1px solid var(--primary);
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+    cursor: pointer;
+    font-family: 'Fira sans';
+  }
+  
+  .contact-section button:hover{
+    background: var(--primary);
+    color: #fff;
+  }
