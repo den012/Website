@@ -9,40 +9,43 @@
 </head>
 <body>
 
-    <nav>
-        <div class="navContainer">
-            <h1>NavBar</h1>
+    <div id="particles-js">
+        <nav>
+            <div class="navContainer">
+                <h1>NavBar</h1>
 
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="info.html">Info</a>
-                <a href="contact.html">Contact</a>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="info.html">Info</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
+        </nav>
+
+
+        <div class="world">
+            <video class="worldVideo" src="globe1.mp4" muted loop autoplay></video>
         </div>
-    </nav>
 
+        <h1 id="title">CHALLENGING THE<br>STANDFORDOF SPACE<br>EXPLORATION</h1>
 
-    <div class="world">
-        <video class="worldVideo" src="globe1.mp4" muted loop autoplay></video>
+        <p id="earthp">Earth, our home, is the third planet from the sun. While <br>scientists continue to hunt for clues of life beyond Earth,<br> our home planet remains the only place in the universe<br> where we've ever identified living organisms. </p>
+
+        <button class="btn" type="button" onclick="openPage()">Learn more</button>
+        
     </div>
-
-    <h1 id="title">CHALLENGING THE<br>STANDFORDOF SPACE<br>EXPLORATION</h1>
-
-    <p id="earthp">Earth, our home, is the third planet from the sun. While <br>scientists continue to hunt for clues of life beyond Earth,<br> our home planet remains the only place in the universe<br> where we've ever identified living organisms. </p>
-
-    <button class="btn" type="button" onclick="openPage()">Learn more</button>
-
-
-
-    <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </section>
-
 
 
     <script src="script.js"></script>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'particles.json', 
+        function(){console.log('working...')})
+    </script>
 </body>
 </html>
